@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="lyanglyang.newapp_oct26.Register">
+
+
+    <ImageView
+        android:id="@+id/imageView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/register"
+        tools:layout_editor_absoluteX="-37dp"
+        tools:layout_editor_absoluteY="-30dp"
+        android:scaleType="centerCrop"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:id="@+id/but_regSubmit"
+        android:layout_width="141dp"
+        android:layout_height="56dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="43dp"
+        android:onClick="RegisterButtonClicked"
+        android:text="Register"
+        tools:layout_editor_absoluteX="122dp"
+        tools:layout_editor_absoluteY="423dp" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="221dp"
+        android:layout_height="135dp"
+        app:srcCompat="@drawable/heartbeat3"
+        tools:layout_editor_absoluteY="430dp"
+        tools:layout_editor_absoluteX="82dp"
+        android:layout_marginTop="407dp"
+        android:layout_below="@+id/regAge"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:id="@+id/regName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Name"
+        android:inputType="textPersonName"
+        tools:layout_editor_absoluteX="32dp"
+        tools:layout_editor_absoluteY="104dp"
+        android:layout_marginBottom="12dp"
+        android:layout_marginStart="20dp"
+        android:layout_above="@+id/regSex"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:id="@+id/regBlood"
+        android:layout_width="178dp"
+        android:layout_height="41dp"
+        android:ems="10"
+        android:hint="Blood Group"
+        android:inputType="textPersonName"
+        tools:layout_editor_absoluteX="32dp"
+        tools:layout_editor_absoluteY="147dp"
+        android:layout_marginTop="12dp"
+        android:layout_below="@+id/regAge"
+        android:layout_alignStart="@+id/regAge" />
+
+    <EditText
+        android:id="@+id/regSex"
+        android:layout_width="123dp"
+        android:layout_height="41dp"
+        android:ems="10"
+        android:hint="Sex"
+        android:inputType="textPersonName"
+        tools:layout_editor_absoluteX="227dp"
+        tools:layout_editor_absoluteY="147dp"
+        android:layout_alignBottom="@+id/regAge"
+        android:layout_toEndOf="@+id/regName"
+        android:layout_marginStart="13dp" />
+
+    <EditText
+        android:id="@+id/regAge"
+        android:layout_width="178dp"
+        android:layout_height="40dp"
+        android:ems="10"
+        android:hint="Age"
+        android:inputType="textPersonName"
+        tools:layout_editor_absoluteX="32dp"
+        tools:layout_editor_absoluteY="188dp"
+        android:layout_marginTop="183dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/regName" />
+
+    <TextView
+        android:id="@+id/regShowUser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/regBlood"
+        android:layout_below="@+id/regBlood"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="30dp"
+        android:text="TextView"
+        android:layout_above="@+id/but_regSubmit"
+        android:layout_alignEnd="@+id/regSex" />
+    <!--
+    <EditText
+        android:id="@+id/editText6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Phone Number"
+        android:inputType="phone"
+        tools:layout_editor_absoluteX="32dp"
+        tools:layout_editor_absoluteY="228dp"
+        android:layout_centerVertical="true"
+        android:layout_alignStart="@+id/editText7" />
+
+    <EditText
+        android:id="@+id/editText7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Location"
+        android:inputType="textPersonName"
+        tools:layout_editor_absoluteX="32dp"
+        tools:layout_editor_absoluteY="271dp"
+        android:layout_above="@+id/editText8"
+        android:layout_alignStart="@+id/editText8" />
+
+    <EditText
+        android:id="@+id/editText8"
+        android:layout_width="336dp"
+        android:layout_height="45dp"
+        android:ems="10"
+        android:hint="Number of times blood donated?"
+        android:inputType="number"
+        tools:layout_editor_absoluteX="32dp"
+        tools:layout_editor_absoluteY="314dp"
+        android:layout_above="@+id/editText9"
+        android:layout_alignStart="@+id/editText9" />
+
+    <EditText
+        android:id="@+id/editText9"
+        android:layout_width="337dp"
+        android:layout_height="49dp"
+        android:ems="10"
+        android:hint="Last Time blood donated"
+        android:inputType="textPersonName"
+        tools:layout_editor_absoluteX="31dp"
+        tools:layout_editor_absoluteY="359dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="94dp" />
+        -->
+
+</RelativeLayout>

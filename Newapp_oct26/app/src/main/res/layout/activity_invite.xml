@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="lyanglyang.newapp_oct26.invite">
+
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/invite_friends"
+        tools:layout_editor_absoluteX="-37dp"
+        tools:layout_editor_absoluteY="-30dp"
+        android:scaleType="centerCrop"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true" />
+
+    <EditText
+        android:id="@+id/inviteName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Name*"
+        android:inputType="textPersonName"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="80dp"
+        android:layout_above="@+id/invitePhone"
+        android:layout_alignStart="@+id/invitePhone" />
+
+    <EditText
+        android:id="@+id/invitePhone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Phone No*"
+        android:inputType="textPersonName"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="123dp"
+        android:layout_above="@+id/inviteEmail"
+        android:layout_alignEnd="@+id/inviteButton" />
+
+    <EditText
+        android:id="@+id/inviteEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Email Address"
+        android:inputType="textPersonName"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="166dp"
+        android:layout_marginBottom="17dp"
+        android:layout_above="@+id/displayUsersInvite"
+        android:layout_alignStart="@+id/invitePhone" />
+
+    <Button
+        android:id="@+id/inviteButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="28dp"
+        android:onClick="inviteButtonClicked"
+        android:text="Invite"
+        tools:layout_editor_absoluteX="155dp"
+        tools:layout_editor_absoluteY="388dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/displayUsersInvite"
+        android:layout_width="300dp"
+        android:layout_height="200dp"
+
+        android:text="TextView"
+        android:layout_above="@+id/inviteButton"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>

@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="lyanglyang.newapp_oct26.PostRequests">
+
+    <ImageView
+        android:id="@+id/imageView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/postrequests"
+        tools:layout_editor_absoluteX="-37dp"
+        tools:layout_editor_absoluteY="-30dp"
+        android:layout_alignParentTop="true"
+        android:scaleType="centerCrop"
+        android:layout_alignParentStart="true" />
+
+
+
+    <EditText
+        android:id="@+id/PatientsName"
+        android:layout_width="276dp"
+        android:layout_height="44dp"
+        android:ems="10"
+        android:hint="Patient's Name*"
+        android:inputType="textPersonName"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="112dp"
+        android:layout_marginBottom="69dp"
+        android:layout_above="@+id/showRequests"
+        android:layout_alignStart="@+id/bloodGroupRequired" />
+
+    <EditText
+        android:id="@+id/bloodGroupRequired"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Blood Group Required*"
+        android:inputType="textPersonName"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="199dp"
+        android:layout_alignBaseline="@+id/pintsRequired"
+        android:layout_alignBottom="@+id/pintsRequired"
+        android:layout_toStartOf="@+id/pintsRequired"
+        android:layout_marginEnd="11dp" />
+
+    <EditText
+        android:id="@+id/pintsRequired"
+        android:layout_width="142dp"
+        android:layout_height="43dp"
+        android:ems="10"
+        android:hint="Pints Required*"
+        android:inputType="textPersonName|numberSigned"
+        tools:layout_editor_absoluteX="239dp"
+        tools:layout_editor_absoluteY="156dp"
+        android:layout_above="@+id/showRequests"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="11dp" />
+
+    <!--
+
+    <EditText
+        android:id="@+id/editText11"
+        android:layout_width="347dp"
+        android:layout_height="40dp"
+        android:ems="10"
+        android:hint="Hospital's Name or place where admitted"
+        android:inputType="textPersonName"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="296dp"
+        android:layout_above="@+id/editText13"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:id="@+id/editText13"
+        android:layout_width="138dp"
+        android:layout_height="45dp"
+        android:ems="10"
+        android:hint="Age of Patient"
+        android:inputType="textPersonName"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="336dp"
+        android:layout_above="@+id/editText16"
+        android:layout_alignStart="@+id/editText16" />
+
+    <EditText
+        android:id="@+id/editText15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="When is blood required?"
+        android:inputType="date"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="156dp"
+        android:layout_above="@+id/editText12"
+        android:layout_alignStart="@+id/editText12" />
+
+    <RadioButton
+        android:id="@+id/radioButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fresh Blood Required"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="242dp"
+        android:layout_above="@+id/editText11"
+        android:layout_alignStart="@+id/editText11" />
+
+    <EditText
+        android:id="@+id/editText16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Relationship to Patient"
+        android:inputType="textPersonName"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="381dp"
+        android:layout_marginBottom="62dp"
+        android:layout_above="@+id/button6"
+        android:layout_alignStart="@+id/editText11" />
+
+    -->
+
+    <Button
+        android:id="@+id/submitButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="14dp"
+        android:onClick="BloodRequestSubmitClicked"
+        android:text="Submit Request"
+        tools:layout_editor_absoluteX="122dp"
+        tools:layout_editor_absoluteY="447dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/showRequests"
+        android:layout_marginStart="13dp" />
+
+    <TextView
+        android:id="@+id/showRequests"
+        android:layout_width="300dp"
+        android:layout_height="200dp"
+        android:text="TextView"
+        android:layout_above="@+id/submitButton"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/deleteButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/showRequests"
+        android:layout_toEndOf="@+id/bloodGroupRequired"
+        android:onClick="deleteRequestButtonClicked"
+        android:text="Delete" />
+
+</RelativeLayout>

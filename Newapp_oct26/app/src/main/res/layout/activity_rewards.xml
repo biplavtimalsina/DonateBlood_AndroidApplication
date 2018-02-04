@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="lyanglyang.newapp_oct26.Rewards">
+
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/rewards"
+        tools:layout_editor_absoluteX="-37dp"
+        tools:layout_editor_absoluteY="-30dp"
+        android:scaleType="centerCrop"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/textView17"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Number of times blood donated"
+        tools:layout_editor_absoluteX="16dp"
+        android:textSize="20sp"
+        android:textColor="#F44336"
+        tools:layout_editor_absoluteY="292dp"
+        android:layout_centerVertical="true"
+        android:layout_alignStart="@+id/textView18" />
+
+    <TextView
+        android:id="@+id/textView18"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Date of blood Donation"
+        tools:layout_editor_absoluteX="16dp"
+        android:textSize="20sp"
+        android:textColor="#F44336"
+        tools:layout_editor_absoluteY="326dp"
+        android:layout_above="@+id/collectRewards"
+        android:layout_alignEnd="@+id/collectRewards"
+        android:layout_marginEnd="25dp"
+        android:layout_marginBottom="119dp" />
+
+    <Button
+        android:id="@+id/collectRewards"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Collect Rewards"
+        tools:layout_editor_absoluteX="116dp"
+        tools:layout_editor_absoluteY="424dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="42dp" />
+
+</RelativeLayout>
